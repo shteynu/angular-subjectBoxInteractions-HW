@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MessageBoxService} from "../message-box.service";
 
 @Component({
   selector: 'app-app-s3',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppS3Component implements OnInit {
 
-  constructor() { }
+  val;
 
-  ngOnInit() {
+  constructor(private msgBox: MessageBoxService) { }
+
+  ngOnInit() {}
+
+  send(){
+    this.msgBox.getMsgBox2().next(this.val);
+    this.msgBox.getMsgBox3().next(this.val);
   }
+
 
 }

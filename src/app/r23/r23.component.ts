@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MessageBoxService} from "../message-box.service";
 
 @Component({
   selector: 'app-r23',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class R23Component implements OnInit {
 
-  constructor() { }
+  result;
+
+  constructor(private msgBox: MessageBoxService) { }
 
   ngOnInit() {
+    this.msgBox.getMsgBox3().asObservable().subscribe((res)=>this.result=res);
   }
 
 }

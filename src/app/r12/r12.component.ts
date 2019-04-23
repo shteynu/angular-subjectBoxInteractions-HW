@@ -10,7 +10,6 @@ export class R12Component implements OnInit {
 
   result;
 
-
   constructor(private msgBox: MessageBoxService) { }
 
   ngOnInit() {
