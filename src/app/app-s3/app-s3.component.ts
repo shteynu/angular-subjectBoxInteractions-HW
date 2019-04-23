@@ -15,7 +15,6 @@ export class AppS3Component implements OnInit {
   ngOnInit() {}
 
   send(){
-    this.msgBox.getMsgBox2().next(this.val);
     this.msgBox.getMsgBox3().next(this.val);
   }
 

@@ -8,7 +8,8 @@ export class MessageBoxService {
 
   static messageBox: Subject<any> = new Subject<any>();
   static messageBoxTwo: Subject<any> = new Subject<any>();
-  static messageBoxThree:Subject<any> = new Subject<any>();
+  static messageBoxThree: Subject<any> = new Subject<any>();
+  static messageBoxFour: Subject<any> = new Subject<any>();
 
 
   constructor() { }
@@ -20,6 +21,9 @@ export class MessageBoxService {
     return MessageBoxService.messageBoxTwo;
   }
   getMsgBox3(){
+    return MessageBoxService.messageBoxThree;
+  }
+  getMsgBox4(){
     return MessageBoxService.messageBoxThree;
   }
 

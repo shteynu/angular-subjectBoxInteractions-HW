@@ -17,7 +17,6 @@ export class AppS1Component implements OnInit {
 
   send(){
     this.msgBox.getMsgBox().next(this.val);
-    this.msgBox.getMsgBox2().next(this.val);
   }
 
 }
